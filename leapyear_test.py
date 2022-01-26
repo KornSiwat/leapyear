@@ -12,3 +12,6 @@ class TestLeapyearClass:
 
     def test_is_leapyear_when_input_is_divisible_by_4(self):
         assert is_leapyear(2092) == True
+
+    def test_is_not_leapyear_when_input_centuryyear_not_divisble_by_400_and_not_centuryyear_not_divisible_by_4(self):
+        assert is_leapyear(1999) == False
